@@ -1,0 +1,6 @@
+framework module Pods_koffEE {
+  umbrella header "Pods-koffEE-umbrella.h"
+
+  export *
+  module * { export * }
+}
