@@ -13,6 +13,8 @@
 		0C04E7211E872C4C001CDF64 /* koffEE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C04E71F1E872C4C001CDF64 /* koffEE.xcdatamodeld */; };
 		0C04E7231E872C4C001CDF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C04E7221E872C4C001CDF64 /* Assets.xcassets */; };
 		0C04E7261E872C4C001CDF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C04E7241E872C4C001CDF64 /* LaunchScreen.storyboard */; };
+		0C04E72E1E872C9C001CDF64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C04E72D1E872C9C001CDF64 /* GoogleService-Info.plist */; };
+		0E8515B53933BC7E3C9CF47C /* Pods_koffEE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC388A77E07D9CAA5FA92D19 /* Pods_koffEE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0C04E7221E872C4C001CDF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C04E7251E872C4C001CDF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C04E7271E872C4C001CDF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C04E72D1E872C9C001CDF64 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3EB91392387B9393D5CF49C5 /* Pods-koffEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-koffEE.release.xcconfig"; path = "Pods/Target Support Files/Pods-koffEE/Pods-koffEE.release.xcconfig"; sourceTree = "<group>"; };
+		F53AE2586FC61092169CBA4D /* Pods-koffEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-koffEE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-koffEE/Pods-koffEE.debug.xcconfig"; sourceTree = "<group>"; };
+		FC388A77E07D9CAA5FA92D19 /* Pods_koffEE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_koffEE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8515B53933BC7E3C9CF47C /* Pods_koffEE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0C04E7171E872C4C001CDF64 /* koffEE */,
 				0C04E7161E872C4C001CDF64 /* Products */,
+				59610D98CC64B1D8506928FD /* Pods */,
+				66730229A7CBFE9C2612FAE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +71,27 @@
 				0C04E7221E872C4C001CDF64 /* Assets.xcassets */,
 				0C04E7241E872C4C001CDF64 /* LaunchScreen.storyboard */,
 				0C04E7271E872C4C001CDF64 /* Info.plist */,
+				0C04E72D1E872C9C001CDF64 /* GoogleService-Info.plist */,
 				0C04E71F1E872C4C001CDF64 /* koffEE.xcdatamodeld */,
 			);
 			path = koffEE;
+			sourceTree = "<group>";
+		};
+		59610D98CC64B1D8506928FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F53AE2586FC61092169CBA4D /* Pods-koffEE.debug.xcconfig */,
+				3EB91392387B9393D5CF49C5 /* Pods-koffEE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66730229A7CBFE9C2612FAE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC388A77E07D9CAA5FA92D19 /* Pods_koffEE.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C04E72A1E872C4C001CDF64 /* Build configuration list for PBXNativeTarget "koffEE" */;
 			buildPhases = (
+				0631460BB4740AEC442E2C2F /* [CP] Check Pods Manifest.lock */,
 				0C04E7111E872C4C001CDF64 /* Sources */,
 				0C04E7121E872C4C001CDF64 /* Frameworks */,
 				0C04E7131E872C4C001CDF64 /* Resources */,
+				799FC7AAAC70CD75673D9FAB /* [CP] Embed Pods Frameworks */,
+				CF1571FA3B35333BC1B3E4B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C04E7261E872C4C001CDF64 /* LaunchScreen.storyboard in Resources */,
+				0C04E72E1E872C9C001CDF64 /* GoogleService-Info.plist in Resources */,
 				0C04E7231E872C4C001CDF64 /* Assets.xcassets in Resources */,
 				0C04E71E1E872C4C001CDF64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0631460BB4740AEC442E2C2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		799FC7AAAC70CD75673D9FAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-koffEE/Pods-koffEE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1571FA3B35333BC1B3E4B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-koffEE/Pods-koffEE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C04E7111E872C4C001CDF64 /* Sources */ = {
@@ -263,6 +342,7 @@
 		};
 		0C04E72B1E872C4C001CDF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53AE2586FC61092169CBA4D /* Pods-koffEE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN944V288X;
@@ -276,6 +356,7 @@
 		};
 		0C04E72C1E872C4C001CDF64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB91392387B9393D5CF49C5 /* Pods-koffEE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EN944V288X;
