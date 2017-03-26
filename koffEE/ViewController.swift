@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         let auth = FIRAuth.auth()
+        FIRApp.configure()
         
         let loginButton = UIButton(type: .custom)
         loginButton.backgroundColor = UIColor.darkGray
@@ -40,7 +41,14 @@ class ViewController: UIViewController {
                 print("User cancelled login.")
             case .success(let grantedPermissions, let declinedPermissions, let accessToken):
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: accessToken.authenticationToken)
-                print(credential)
+                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                    // ...
+                    if let error = error {
+                        // ...
+                        print("error 2")
+                    }
+                }
+                print("success")
             }
         }
     }
@@ -50,7 +58,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
