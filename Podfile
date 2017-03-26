@@ -7,5 +7,8 @@ target 'koffEE' do
 
   # Pods for koffEE
   pod 'Firebase/Core'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
 
 end
