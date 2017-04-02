@@ -63,6 +63,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - Socket.IO-Client-Swift (8.3.0)
 
 DEPENDENCIES:
   - FacebookCore
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Socket.IO-Client-Swift
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -90,7 +92,8 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  Socket.IO-Client-Swift: 7ad3aded3c0f74d99555e950ac3aa82ca3eefbaf
 
-PODFILE CHECKSUM: b26ad9075accf46333ff3ab1175e8aa5f1353888
+PODFILE CHECKSUM: c27fd22e8bff365a0116f288983f41d6795f56d4
 
 COCOAPODS: 1.2.0

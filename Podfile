@@ -13,5 +13,6 @@ target 'koffEE' do
   pod 'FacebookCore'
   pod 'FacebookLogin'
   pod 'FacebookShare'
+  pod 'Socket.IO-Client-Swift'
 
 end

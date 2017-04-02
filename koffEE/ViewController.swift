@@ -15,16 +15,22 @@ import FacebookShare
 
 class ViewController: UIViewController {
     
+    @IBOutlet var userName: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var submitButton: UIButton!
+    
     override func viewDidLoad() {
-        
-        let auth = FIRAuth.auth()
         FIRApp.configure()
         
+        submitButton.layer.cornerRadius = 10
+        
         let loginButton = UIButton(type: .custom)
-        loginButton.backgroundColor = UIColor.darkGray
+        loginButton.backgroundColor = UIColor.init(red: 59, green: 89, blue: 152, alpha: 1)
         loginButton.center = view.center
-        loginButton.frame = CGRect(x: view.center.x-90, y: view.center.y, width: 180, height: 45)
-        loginButton.setTitle("FB Login", for: .normal)
+        loginButton.frame = CGRect(x: view.center.x-90, y: view.center.y+75, width: 180, height: 45)
+        loginButton.layer.cornerRadius = 10
+        loginButton.titleLabel?.textColor = UIColor.black
+        loginButton.setTitle("Login with Facebook", for: .normal)
         loginButton.addTarget(self, action: #selector(loginButtonClicked(button:)), for: .touchUpInside)
         
         view.addSubview(loginButton)
@@ -51,6 +57,13 @@ class ViewController: UIViewController {
                 print("success")
             }
         }
+    }
+    
+    @IBAction func signInPrssed(_ sender: Any) {
+        print(userName.text)
+        print(password.text)
+        
+        
     }
 
 
