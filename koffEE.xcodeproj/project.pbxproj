@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C04E7191E872C4C001CDF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04E7181E872C4C001CDF64 /* AppDelegate.swift */; };
-		0C04E71B1E872C4C001CDF64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04E71A1E872C4C001CDF64 /* ViewController.swift */; };
+		0C04E71B1E872C4C001CDF64 /* initialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C04E71A1E872C4C001CDF64 /* initialScreen.swift */; };
 		0C04E71E1E872C4C001CDF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C04E71C1E872C4C001CDF64 /* Main.storyboard */; };
 		0C04E7211E872C4C001CDF64 /* koffEE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C04E71F1E872C4C001CDF64 /* koffEE.xcdatamodeld */; };
 		0C04E7231E872C4C001CDF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C04E7221E872C4C001CDF64 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		0C04E7151E872C4C001CDF64 /* koffEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koffEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C04E7181E872C4C001CDF64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C04E71A1E872C4C001CDF64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C04E71A1E872C4C001CDF64 /* initialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initialScreen.swift; sourceTree = "<group>"; };
 		0C04E71D1E872C4C001CDF64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C04E7201E872C4C001CDF64 /* koffEE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = koffEE.xcdatamodel; sourceTree = "<group>"; };
 		0C04E7221E872C4C001CDF64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0C04E7181E872C4C001CDF64 /* AppDelegate.swift */,
-				0C04E71A1E872C4C001CDF64 /* ViewController.swift */,
+				0C04E71A1E872C4C001CDF64 /* initialScreen.swift */,
 				0C04E71C1E872C4C001CDF64 /* Main.storyboard */,
 				0C04E7221E872C4C001CDF64 /* Assets.xcassets */,
 				0C04E7241E872C4C001CDF64 /* LaunchScreen.storyboard */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C04E71B1E872C4C001CDF64 /* ViewController.swift in Sources */,
+				0C04E71B1E872C4C001CDF64 /* initialScreen.swift in Sources */,
 				0C04E7191E872C4C001CDF64 /* AppDelegate.swift in Sources */,
 				0C04E7211E872C4C001CDF64 /* koffEE.xcdatamodeld in Sources */,
 			);
