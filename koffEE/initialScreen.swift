@@ -54,8 +54,12 @@ class ViewController: UIViewController {
         //3
         do {
             let people = try managedContext.fetch(fetchRequest)
-            print(people[0].value(forKey: "username"), people[0].value(forKey: "password"))
-            return true
+            if (people.count == 1) {
+                print (people[0].value(forKey: "username"), people[0].value(forKey: "password"))
+                return true
+            } else {
+                return false
+            }
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
             return false
@@ -80,7 +84,7 @@ class ViewController: UIViewController {
                         print("error 2")
                     }
                 }
-                print("success")
+                print(credential);
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let mainViewController = storyBoard.instantiateViewController(withIdentifier: "MainView")
                 self.present(mainViewController, animated:true, completion:nil)
